@@ -51,7 +51,7 @@ def draw_tree(tree, val, prefix = ''):
     global listValue
     j += 1  
     if isinstance(tree, str):    
-        descr = '%s [label="%s %s", fontcolor=blue, fontsize=14];\n'%(j-1, j-1, tree)
+        descr = '%s [label="%s %s", fontsize=16, fontcolor=blue, width=2, shape=box];\n'%(j-1, j-1, tree)
         prefixCode[prefix] = j-1
         listValue.append(tree)	
     else: 
@@ -152,7 +152,7 @@ def program():
             newStr += str(x[0]) + " -> "
             newStr += str(x[1]) + "\n"   
             if str(x[1]) not in numberLetterDictionary:
-                newStr += '%s [label="%s %s", fontcolor=blue, fontsize=14];\n'%(str(x[1]), str(x[1]), firstPrufferLetter) + "\n"
+                newStr += '%s [label="%s %s", fontsize=16, fontcolor=blue, width=2, shape=box];\n'%(str(x[1]), str(x[1]), firstPrufferLetter) + "\n"
                 try:
                     pruferLetters.pop(0)
                     firstPrufferLetter = pruferLetters[0]
