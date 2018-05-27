@@ -43,8 +43,7 @@ graphStructure = []
 def draw_tree(tree, val, prefix = ''):
     global j
     global listValue
-    j += 1
-    
+    j += 1  
     if isinstance(tree, str):    
         descr = '%s [label="%s %s", fontcolor=blue, fontsize=14];\n'%(j-1, j-1, tree)
         prefixCode[prefix] = j-1
@@ -59,7 +58,7 @@ def draw_tree(tree, val, prefix = ''):
     return descr
 
 def program():
-    option = input("Wpisz opcję(1 - Kodowanie Huffmana Lub 2 - Dekodowanie Prufera 3 - Wyjście): ")
+    option = input("Wpisz opcję(1 - Drzewo Huffmana + Kodowanie Prufera lub 2 - Dekodowanie Prufera lub 3 - Wyjście): ")
     if option == "1":
         while True:
             fileWithInputData = input("Plik z tekstem wejściowym: ") 
@@ -102,7 +101,7 @@ def program():
         file.close()
         f = Image.open(nameOfGraphFile+".jpeg").show()
         program()
-    elif option == "2":
+    elif option == "2":   
         while True:
             fileWithInputDataMode2 = input("Ścieżka do pliku z kodem Prufera: ") 
             if os.path.exists(fileWithInputDataMode2):   
@@ -113,6 +112,7 @@ def program():
                 continue
         pruferVert = []   
         pruferLet = []
+        
         for i, line in enumerate(file_object):
             if i == 1:
                 pruferNumbers = line.split(" ")
@@ -160,7 +160,7 @@ def program():
     elif option == "3":
         sys.exit()
     else:
-        print("Coś poszło nie tak, proszę wybrać 1,2 lub 3")
+        print("Coś poszło nie tak, proszę wybrać 1 lub 2")
         program()
         
 program()
