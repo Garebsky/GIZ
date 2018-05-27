@@ -4,15 +4,15 @@ Windows:
 https://www.python.org/downloads/
 
 2. Ściągnąć Graphviz
-https://graphviz.gitlab.io/download/
-pip install graphviz
-//dodać ściężke do PATH (C:\Program Files (x86)\Graphviz2.38\bin\dot.exe) w zmiennych środowiskowych systemu
-//dodać ściężke do PATH (C:\Program Files (x86)\Graphviz2.38\bin) w zmiennych środowiskowych użytkownika
+Pobrać https://graphviz.gitlab.io/_pages/Download/Download_windows.html w wersji .msi
+Zainstalować zgodnie z instalatorem
+
+dodać ściężke(z zainstalowanym graphvizem) do PATH (C:\Program Files (x86)\Graphviz2.38\bin\dot.exe) w zmiennych środowiskowych systemu
+dodać ściężke(z zainstalowanym graphvizem) do PATH (C:\Program Files (x86)\Graphviz2.38\bin) w zmiennych środowiskowych użytkownika
 
 3. Zaintalować następujace moduły: 
 pip install Pillow
 pip install sympy
-pip install mpmath
 
 4. Uruchomić cmd
 
