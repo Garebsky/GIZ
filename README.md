@@ -1,6 +1,6 @@
 Windows:
 
-1. Ściągnąć i zainstalować Python 3 (np: 3.6.5)
+1. Ściągnąć i zainstalować Python 3 (np: 3.6.5) zaznaczyć opcję dodania do PATH.
 https://www.python.org/downloads/
 
 2. Ściągnąć Graphviz
@@ -15,15 +15,16 @@ W CMD wpisać: <br />
 pip install Pillow <br />
 pip install sympy <br />
 pip install mpmath <br />
+(Jeśli nie zadziała można użyć py -m pip install [nazwa])
 
 4. Pobrać i w CMD dojść do ścieżki z folderem z githuba, wpisać : cwiczenie1.py 
 
-5. Wpisać 1 w celu utworzenia kodu Huffmana  <br />
+5. Wpisać 1 w celu utworzenia kodu Huffmana i zakodowania <br />
     a) podać ścieżkę do pliku tekstowego (np: test.txt) <br />
-    b) podać ścieżkę/nazwę dla obrazu wyjściowego bez rozszerzenia(np: testGraphOutput) <br />
-    c) podać ścieżkę/nazwę dla tekstu wyjściowego (np: testOutput.txt) <br />
+    b) podać ścieżkę dla obrazu wyjściowego bez rozszerzenia(np: testGraphOutput) <br />
+    c) podać ścieżkę dla tekstu wyjściowego (np: testOutput.txt) <br />
     
-6. Wpisać 2 w celu zdekodwania pliku tekstowego i utworzenia grafu <br />
+6. Wpisać 2 w celu zdekodowania pliku tekstowego i utworzenia grafu <br />
     a) podać ściężkę do pliku tekstowego (np: testOutput.txt) <br />
     a) podać ściężkę do obrazu wyjściowego bez rozszerzenia (np: graphFinal) <br />
 
