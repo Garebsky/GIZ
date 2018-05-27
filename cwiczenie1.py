@@ -36,7 +36,13 @@ def Huffman_code(_vals):
     tree = assign_code(nodes, root, code)    
     return code, tree
 
+#wyzerowanie numerowania wierzchołków
+def set_globvar_to_zero():
+    global j   
+    j = 0
+
 j = 0
+set_globvar_to_zero()
 listValue = []
 prefixCode = {}
 graphStructure = []
@@ -58,6 +64,7 @@ def draw_tree(tree, val, prefix = ''):
     return descr
 
 def program():
+    j = 0
     option = input("Wpisz opcję(1 - Drzewo Huffmana + Kodowanie Prufera lub 2 - Dekodowanie Prufera lub 3 - Wyjście): ")
     if option == "1":
         while True:
@@ -79,12 +86,13 @@ def program():
         code, tree = Huffman_code(dictionary)
 
         nameOfGraphFile = input("Ścieżka do grafu wyjściowego - bez rozszerzenia: ")  
+        set_globvar_to_zero()
         with open(nameOfGraphFile + ".dot",'w') as f:
             f.write('digraph G {\n')
             f.write(draw_tree(tree, 0))
             f.write('}')      
         subprocess.call('dot -Tjpeg '+nameOfGraphFile+'.dot -o '+nameOfGraphFile+'.jpeg', shell=True)
-
+        j = 0
         a = Prufer.to_prufer(graphStructure,len(graphStructure)+1)
         
         nameOfFile = input("Ścieżka do pliku wyjsciowego: ")
