@@ -107,7 +107,7 @@ def program():
         lines = [first,"\n",second,"\n",third]    
         file.writelines(lines)
         file.close()
-        f = Image.open(nameOfGraphFile+".jpeg").show()
+        f = Image.open(nameOfGraphFile+".png").show()
         program()
     elif option == "2":   
         while True:
