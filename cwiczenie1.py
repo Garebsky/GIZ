@@ -91,7 +91,7 @@ def program():
             f.write('digraph G {\n')
             f.write(draw_tree(tree, 0))
             f.write('}')      
-        subprocess.call('dot -Tjpeg '+nameOfGraphFile+'.dot -o '+nameOfGraphFile+'.jpeg', shell=True)
+        subprocess.call('dot -Tpng '+nameOfGraphFile+'.dot -o '+nameOfGraphFile+'.png', shell=True)
         j = 0
         a = Prufer.to_prufer(graphStructure,len(graphStructure)+1)
         
@@ -107,7 +107,7 @@ def program():
         lines = [first,"\n",second,"\n",third]    
         file.writelines(lines)
         file.close()
-        f = Image.open(nameOfGraphFile+".jpeg").show()
+        f = Image.open(nameOfGraphFile+".png").show()
         program()
     elif option == "2":   
         while True:
