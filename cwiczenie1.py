@@ -91,7 +91,7 @@ def program():
             f.write('digraph G {\n')
             f.write(draw_tree(tree, 0))
             f.write('}')      
-        subprocess.call('dot -Tjpeg '+nameOfGraphFile+'.dot -o '+nameOfGraphFile+'.jpeg', shell=True)
+        subprocess.call('dot -Tpng '+nameOfGraphFile+'.dot -o '+nameOfGraphFile+'.png', shell=True)
         j = 0
         a = Prufer.to_prufer(graphStructure,len(graphStructure)+1)
         
