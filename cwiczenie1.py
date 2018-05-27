@@ -168,7 +168,7 @@ def program():
     elif option == "3":
         sys.exit()
     else:
-        print("Coś poszło nie tak, proszę wybrać 1 lub 2")
+        print("Coś poszło nie tak, proszę wybrać 1,2 lub 3")
         program()
         
 program()
