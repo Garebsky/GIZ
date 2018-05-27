@@ -4,7 +4,7 @@ Windows:
 https://www.python.org/downloads/
 
 2. Ściągnąć Graphviz
-Pobrać https://graphviz.gitlab.io/_pages/Download/Download_windows.html w wersji .msi <br />
+https://graphviz.gitlab.io/_pages/Download/Download_windows.html w wersji .msi <br />
 Zainstalować zgodnie z instalatorem
 
 dodać ściężke(z zainstalowanym graphvizem) do PATH (C:\Program Files (x86)\Graphviz2.38\bin\dot.exe) w zmiennych środowiskowych systemu <br />
@@ -29,4 +29,4 @@ pip install mpmath <br />
 
 7. Wpisać 3 do wyjścia
 
-8. Weryfikacja pliku testOutput.txt
+8. Weryfikacja pliku testOutput.txt z graphFinal.png oraz testGrahpOutput.png
