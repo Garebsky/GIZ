@@ -16,7 +16,7 @@ pip install Pillow <br />
 pip install sympy <br />
 pip install mpmath <br />
 
-4. Dojść do ścieżki z folderem pobranym z githuba, wpisać: cwiczenie1.py 
+4. Pobrać i w CMD dojść do ścieżki z folderem z githuba, wpisać : cwiczenie1.py 
 
 5. Wpisać 1 w celu utworzenia kodu Huffmana  <br />
     a) podać ścieżkę do pliku tekstowego (np: test.txt) <br />
